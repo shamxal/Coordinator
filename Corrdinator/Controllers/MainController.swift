@@ -11,19 +11,16 @@ class MainController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        let controller = storyboard?.instantiateViewController(withIdentifier: "\(LoginController.self)") as! LoginController
+        navigationController?.show(controller, sender: nil)
     }
-    */
-
+    
+    @IBAction func registerButtonTapped(_ sender: Any) {
+        let controller = storyboard?.instantiateViewController(withIdentifier: "\(RegisterController.self)") as! RegisterController
+        navigationController?.show(controller, sender: nil)
+    }
 }
