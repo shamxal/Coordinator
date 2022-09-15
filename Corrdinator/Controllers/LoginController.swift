@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginController: UIViewController {
+class LoginController: UIViewController, Storyboarded {
 
     override func viewDidLoad() {
         super.viewDidLoad()
