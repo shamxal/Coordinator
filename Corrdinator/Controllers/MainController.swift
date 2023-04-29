@@ -14,8 +14,7 @@ class MainController: UIViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
+        print("test")
     }
     
     @IBAction func loginButtonTapped(_ sender: Any) {
